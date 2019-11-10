@@ -17,8 +17,6 @@ config.plugins = config.plugins.concat([
             NODE_ENV: JSON.stringify('production')
         }
     }),
-    new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}}),
-    new webpack.NoErrorsPlugin()
 ]);
 
 module.exports = config;

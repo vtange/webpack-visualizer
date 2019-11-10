@@ -7,15 +7,15 @@ var webpack = require('webpack');
 module.exports = {
     context: __dirname,
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.(js|jsx)$/,
-                loaders: ['babel'],
+                loaders: 'babel-loader',
                 exclude: /node_modules/
             }
         ]
     },
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['.js', '.jsx']
     }
 };
